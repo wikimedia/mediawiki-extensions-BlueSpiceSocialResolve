@@ -1,0 +1,72 @@
+{
+	"name": "BlueSpiceSocialResolve",
+	"version": "3.0.0-alpha",
+	"url": "https://help.bluespice.com/index.php/BlueSpiceSocial",
+	"author": "Patric Wirth",
+	"descriptionmsg": "bs-socialresolve-desc",
+	"type": "bluespice",
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceSocialResolve": {
+					"className": "\\BlueSpice\\Social\\Resolve\\Extension",
+					"extPath": "/BlueSpiceSocialResolve",
+					"status": "beta",
+					"package": "BlueSpiceSocial"
+				}
+			},
+			"RendererRegistry": {
+				"entityresolve": "\\BlueSpice\\Social\\Resolve\\Renderer\\Resolve"
+			}
+		}
+	},
+	"MessagesDirs": {
+		"BlueSpiceSocialResolve": [
+			"i18n"
+		]
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"AutoloadNamespaces": {
+		"BlueSpice\\Social\\Resolve\\": "src/"
+	},
+	"APIModules": {
+		"bs-socialresolve-tasks": "\\BlueSpice\\Social\\Resolve\\Api\\Task\\Resolve"
+	},
+	"ResourceModules": {
+		"ext.bluespice.social.resolve": {
+			"scripts": [
+				"bluespice.social.resolve.js"
+			],
+			"dependencies": [
+				"ext.bluespice.social"
+			],
+			"targets": [ "desktop", "mobile" ],
+			"messages": [
+				"bs-socialresolve-status-resolved",
+				"bs-socialresolve-status-notresolved"
+			]
+		},
+		"ext.bluespice.social.resolve.styles": {
+			"targets": [ "desktop", "mobile" ],
+			"styles": [
+				"bluespice.social.resolve.less"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceSocialResolve/resources"
+	},
+	"Hooks": {
+		"BSEntityConfigDefaults": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigDefaults\\IsResolvable::callback",
+		"BSSocialEntityOutputRenderAfterContent": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialEntityOutputRenderAfterContent\\AddResolveSection::callback",
+		"BSEntityGetFullData": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityGetFullData\\AddResolve::callback",
+		"BSEntitySetValuesByObject": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntitySetValuesByObject\\AddResolve::callback",
+		"BSSocialAllowedSorterValues": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialAllowedSorterValues\\AddResolve::callback",
+		"BSSocialModuleDepths": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialModuleDepths\\AddModules::callback",
+		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigAttributeDefinitions\\AddResolve::callback"
+	},
+	"manifest_version": 2
+}

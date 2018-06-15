@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.com>"
+		]
+	},
+	"bs-socialresolve-desc": "BSSocial",
+	"bs-socialresolve-status-resolved": "Gelöst",
+	"bs-socialresolve-status-notresolved": "Ungelöst",
+	"bs-socialresolve-var-resolved": "Empfohlen"
+}
