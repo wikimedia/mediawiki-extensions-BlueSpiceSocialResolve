@@ -68,7 +68,8 @@
 		"BSEntitySetValuesByObject": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntitySetValuesByObject\\AddResolve::callback",
 		"BSSocialAllowedSorterValues": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialAllowedSorterValues\\AddResolve::callback",
 		"BSSocialModuleDepths": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialModuleDepths\\AddModules::callback",
-		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigAttributeDefinitions\\AddResolve::callback"
+		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigAttributeDefinitions\\AddResolve::callback",
+		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\Social\\Resolve\\Hook\\BSFoundationRendererMakeTagAttribs\\AddResolveClassToEntityRenderer::callback"
 	},
 	"manifest_version": 2
 }
