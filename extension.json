@@ -37,13 +37,15 @@
 	"ResourceModules": {
 		"ext.bluespice.social.resolve": {
 			"scripts": [
-				"bluespice.social.resolve.js"
+				"bluespice.social.resolve.js",
+				"EntityListMenu/Filter/Resolved.js"
 			],
 			"dependencies": [
 				"ext.bluespice.social"
 			],
 			"targets": [ "desktop", "mobile" ],
 			"messages": [
+				"bs-socialresolve-var-resolved",
 				"bs-socialresolve-status-resolved",
 				"bs-socialresolve-status-notresolved"
 			]
