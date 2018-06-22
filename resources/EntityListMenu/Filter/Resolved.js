@@ -31,13 +31,13 @@ bs.social.EntityListMenuFilterResolved.prototype.makeAllowedValues = function( m
 	});
 	items.push( {
 		id: 1,
-		text: this.getVarLabel( 'notresolved' ),
-		selected: mVal !== null
+		text: this.getVarLabel( 'resolved' ),
+		selected: mVal === true
 	});
 	items.push( {
 		id: 0,
-		text: this.getVarLabel( 'resolved' ),
-		selected: mVal === true
+		text: this.getVarLabel( 'notresolved' ),
+		selected: mVal === false
 	});
 	return items;
 };

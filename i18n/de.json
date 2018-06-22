@@ -5,7 +5,7 @@
 		]
 	},
 	"bs-socialresolve-desc": "BSSocial",
-	"bs-socialresolve-status-resolved": "Offen",
-	"bs-socialresolve-status-notresolved": "Geschlossen",
+	"bs-socialresolve-status-resolved": "Geschlossen",
+	"bs-socialresolve-status-notresolved": "Offen",
 	"bs-socialresolve-var-resolved": "Status"
 }
