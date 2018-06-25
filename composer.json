@@ -2,7 +2,7 @@
 	"name": "bluespice/socialresolve",
 	"type": "mediawiki-extension",
 	"description": "Resolve functionality for social entities",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"extra": {
 		"installer-name": "BlueSpiceSocialResolve"
 	},
