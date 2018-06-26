@@ -42,7 +42,7 @@
 				"EntityListMenu/Filter/Resolved.js"
 			],
 			"dependencies": [
-				"ext.bluespice.social"
+				"ext.bluespice.social.timeline"
 			],
 			"targets": [ "desktop", "mobile" ],
 			"messages": [
