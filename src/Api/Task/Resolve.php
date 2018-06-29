@@ -63,7 +63,7 @@ class Resolve extends \BSApiTasksBase {
 		$services = Services::getInstance();
 		$entity = $services->getBSEntityFactory()->newFromID(
 			$taskData->id,
-			NS_BSSOCIAL
+			NS_SOCIAL_ENTITY
 		);
 		if( !$entity instanceof Entity || !$entity->exists() ) {
 			return $result;
