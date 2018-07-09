@@ -74,11 +74,12 @@ class Resolve extends \BlueSpice\Renderer {
 	}
 
 	protected function makeTagContent() {
-		return \Message::newFromKey(
+		return \Html::element( 'span', [], \Message::newFromKey(
 			$this->item->isResolved()
-			? 'bs-socialresolve-status-resolved'
-			: 'bs-socialresolve-status-notresolved'
-		)->plain();
+				? 'bs-socialresolve-status-resolved'
+				: 'bs-socialresolve-status-notresolved'
+			)->plain()
+		);
 	}
 
 	protected function makeTagAttribs() {
