@@ -53,9 +53,14 @@
 		},
 		"ext.bluespice.social.resolve.styles": {
 			"targets": [ "desktop", "mobile" ],
-			"styles": [
-				"bluespice.social.resolve.less"
-			]
+			"styles": {
+				"bluespice.social.resolve.mobile.less": {
+					"media": "all and ( max-width: 720px )"
+				},
+				"bluespice.social.resolve.desktop.less": {
+					"media": "all and ( min-width: 721px )"
+				}
+			}
 		}
 	},
 	"ResourceFileModulePaths": {
