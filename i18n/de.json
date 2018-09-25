@@ -4,7 +4,7 @@
 			"Patric Wirth <wirth@hallowelt.com>"
 		]
 	},
-	"bs-socialresolve-desc": "Auflösen von Funktionalität für BlueSpiceSocial-Entitäten",
+	"bs-socialresolve-desc": "Statusfeld für BlueSpiceSocial-Entitäten",
 	"bs-socialresolve-status-resolved": "Geschlossen",
 	"bs-socialresolve-status-notresolved": "Offen",
 	"bs-socialresolve-var-resolved": "Status"
