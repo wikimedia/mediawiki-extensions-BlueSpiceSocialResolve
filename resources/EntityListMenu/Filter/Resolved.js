@@ -26,7 +26,7 @@ bs.social.EntityListMenuFilterResolved.prototype.makeAllowedValues = function( m
 	var items = [];
 
 	items.push( {
-		id: false,
+		id: 0,
 		selected: mVal === null
 	});
 	items.push( {
@@ -35,7 +35,7 @@ bs.social.EntityListMenuFilterResolved.prototype.makeAllowedValues = function( m
 		selected: mVal === true
 	});
 	items.push( {
-		id: 0,
+		id: -1,
 		text: this.getVarLabel( 'notresolved' ),
 		selected: mVal === false
 	});
@@ -68,7 +68,7 @@ bs.social.EntityListMenuFilterResolved.prototype.init = function( mVal ) {
 	});
 
 	this.$element.find( 'select' ).on( 'select2:select', function( e ) {
-		me.change( e.params.data.id );
+		me.change( parseInt( e.params.data.id ) );
 	});
 	this.$element.find( 'select' ).on( 'select2:unselect', function( e ) {
 		me.change( 0 );
@@ -87,8 +87,8 @@ bs.social.EntityListMenuFilterResolved.prototype.getVarLabel = function( val ) {
 };
 
 bs.social.EntityListMenuFilterResolved.prototype.getData = function( data ) {
-	var val = this.$element.find( 'select' ).val() || null;
-	if( typeof val === 'undefined' || val === null ) {
+	var val = this.selectedFilters || 0;
+	if( val === 0 ) {
 		return data;
 	}
 	data.filter = data.filter || [];
