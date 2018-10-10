@@ -18,6 +18,9 @@
 			},
 			"RendererRegistry": {
 				"entityresolve": "\\BlueSpice\\Social\\Resolve\\Renderer\\Resolve"
+			},
+			"LessVarsRegistry": {
+				"bs-social-background-color-resolved": "#D9F2DA"
 			}
 		}
 	},
@@ -60,7 +63,8 @@
 				"bluespice.social.resolve.desktop.less": {
 					"media": "all and ( min-width: 721px )"
 				}
-			}
+			},
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		}
 	},
 	"ResourceFileModulePaths": {
