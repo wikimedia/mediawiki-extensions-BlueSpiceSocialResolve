@@ -47,7 +47,6 @@
 			"dependencies": [
 				"ext.bluespice.social.timeline"
 			],
-			"targets": [ "desktop", "mobile" ],
 			"messages": [
 				"bs-socialresolve-var-resolved",
 				"bs-socialresolve-status-resolved",
@@ -55,7 +54,6 @@
 			]
 		},
 		"ext.bluespice.social.resolve.styles": {
-			"targets": [ "desktop", "mobile" ],
 			"styles": {
 				"bluespice.social.resolve.mobile.less": {
 					"media": "all and ( max-width: 720px )"
