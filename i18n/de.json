@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patric Wirth <wirth@hallowelt.com>"
+		]
+	},
+	"bs-socialresolve-desc": "Statusfeld für BlueSpiceSocial-Entitäten",
+	"bs-socialresolve-status-resolved": "Geschlossen",
+	"bs-socialresolve-status-notresolved": "Offen",
+	"bs-socialresolve-var-resolved": "Status"
+}
