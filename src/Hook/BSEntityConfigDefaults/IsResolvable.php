@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\Social\Resolve\Hook\BSEntityConfigDefaults;
+
 use BlueSpice\Hook\BSEntityConfigDefaults;
 
 class IsResolvable extends BSEntityConfigDefaults {

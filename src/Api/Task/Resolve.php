@@ -27,6 +27,7 @@
  */
 namespace BlueSpice\Social\Resolve\Api\Task;
 
+use BlueSpice\Api\Response\Standard;
 use BlueSpice\Social\Entity;
 use BlueSpice\Services;
 
@@ -40,24 +41,34 @@ class Resolve extends \BSApiTasksBase {
 	 * Methods that can be called by task param
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'resolve',
-	);
+	];
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
+		return [
 			'resolve' => [ 'edit' ],
-		);
+		];
 	}
 
+	/**
+	 *
+	 * @param \stdClass $taskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_resolve( $taskData, $aParams ) {
 		$result = $this->makeStandardReturn();
 		$this->checkPermissions();
 
-		if( empty( $taskData->id ) ) {
+		if ( empty( $taskData->id ) ) {
 			$taskData->id = 0;
 		}
-		if( empty( $taskData->resolved ) ) {
+		if ( empty( $taskData->resolved ) ) {
 			$taskData->resolved = false;
 		}
 		$services = Services::getInstance();
@@ -65,19 +76,19 @@ class Resolve extends \BSApiTasksBase {
 			$taskData->{Entity::ATTR_ID},
 			$taskData->{Entity::ATTR_TYPE}
 		);
-		if( !$entity instanceof Entity || !$entity->exists() ) {
+		if ( !$entity instanceof Entity || !$entity->exists() ) {
 			return $result;
 		}
 
 		$resolveItem = $services->getService( 'BSSocialResolveFactory' )
 			->newFromEntity( $entity );
-		if( !$resolveItem ) {
+		if ( !$resolveItem ) {
 			return $result;
 		}
 
 		$status = $resolveItem->resolve( $this->getUser(), $taskData->resolved );
 
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			$result->message = $status->getHTML();
 			return $result;
 		}

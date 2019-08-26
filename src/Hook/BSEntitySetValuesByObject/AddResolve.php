@@ -1,32 +1,33 @@
 <?php
 
 namespace BlueSpice\Social\Resolve\Hook\BSEntitySetValuesByObject;
+
 use BlueSpice\Hook\BSEntitySetValuesByObject;
 use BlueSpice\Social\Entity;
 
 class AddResolve extends BSEntitySetValuesByObject {
 
 	protected function checkEntity() {
-		if( !$this->entity->getConfig( 'IsResolvable' ) ) {
+		if ( !$this->entity->getConfig( 'IsResolvable' ) ) {
 			return false;
 		}
-		if( $this->entity->hasParent() ) {
+		if ( $this->entity->hasParent() ) {
 			return false;
 		}
-		if( !$this->entity->exists() ) {
+		if ( !$this->entity->exists() ) {
 			return false;
 		}
 		return true;
 	}
 
 	protected function doProcess() {
-		if( !$this->entity instanceof Entity ) {
+		if ( !$this->entity instanceof Entity ) {
 			return true;
 		}
-		if( !$this->checkEntity() ) {
+		if ( !$this->checkEntity() ) {
 			return true;
 		}
-		if( !isset( $this->data->resolved ) ) {
+		if ( !isset( $this->data->resolved ) ) {
 			return true;
 		}
 		$this->entity->set( 'resolved', $this->data->resolved ? true : false );
@@ -34,4 +35,3 @@ class AddResolve extends BSEntitySetValuesByObject {
 		return true;
 	}
 }
-
