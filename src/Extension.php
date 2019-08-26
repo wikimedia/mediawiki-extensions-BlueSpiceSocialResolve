@@ -27,4 +27,7 @@
  */
 namespace BlueSpice\Social\Resolve;
 
-class Extension extends \BlueSpice\Extension {}
+use BlueSpice\Extension as BSExt;
+
+class Extension extends BSExt {
+}

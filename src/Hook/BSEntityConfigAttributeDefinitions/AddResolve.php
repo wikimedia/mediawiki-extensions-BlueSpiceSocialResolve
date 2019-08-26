@@ -1,6 +1,7 @@
 <?php
 
 namespace BlueSpice\Social\Resolve\Hook\BSEntityConfigAttributeDefinitions;
+
 use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
 use BlueSpice\Social\EntityConfig;
 use BlueSpice\Data\Entity\Schema;
@@ -9,10 +10,10 @@ use BlueSpice\Data\FieldType;
 class AddResolve extends BSEntityConfigAttributeDefinitions {
 
 	protected function skipProcessing() {
-		if( !$this->entityConfig instanceof EntityConfig ) {
+		if ( !$this->entityConfig instanceof EntityConfig ) {
 			return true;
 		}
-		if( !$this->entityConfig->get( 'IsResolvable' ) ) {
+		if ( !$this->entityConfig->get( 'IsResolvable' ) ) {
 			return true;
 		}
 		return parent::skipProcessing();

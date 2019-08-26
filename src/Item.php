@@ -30,12 +30,17 @@
  */
 namespace BlueSpice\Social\Resolve;
 
+use Status;
+use User;
+use Config;
+use RequestContext;
+use BlueSpice\Renderer;
 use BlueSpice\Social\Entity;
 use BlueSpice\Services;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Social\Resolve\Renderer\Resolve;
 
-class Item implements \JsonSerializable{
+class Item implements \JsonSerializable {
 
 	/**
 	 *
@@ -49,16 +54,24 @@ class Item implements \JsonSerializable{
 	 */
 	protected $resolved = false;
 
+	/**
+	 *
+	 * @param Entity $entity
+	 */
 	public function __construct( Entity $entity ) {
 		$this->entity = $entity;
 		$this->resolved = $entity->get( 'resolved', false );
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function jsonSerialize() {
 		$data = [];
 		$oStatus = $this->getEntity()->userCan(
 			'resolve',
-			\RequestContext::getMain()->getUser()
+			RequestContext::getMain()->getUser()
 		);
 		$data['usercanresolve'] = $oStatus->isOK();
 		$data['id'] = $this->getEntity()->get( Entity::ATTR_ID, 0 );
@@ -68,7 +81,7 @@ class Item implements \JsonSerializable{
 
 	/**
 	 *
-	 * @return Entity;
+	 * @return Entity
 	 */
 	public function getEntity() {
 		return $this->entity;
@@ -76,7 +89,7 @@ class Item implements \JsonSerializable{
 
 	/**
 	 *
-	 * @return \Config
+	 * @return Config
 	 */
 	public function getConfig() {
 		return $this->getEntity()->getConfig();
@@ -84,41 +97,53 @@ class Item implements \JsonSerializable{
 
 	/**
 	 *
-	 * @return boolean
+	 * @return bool
 	 */
 	public function isResolved() {
 		return $this->resolved ? true : false;
 	}
 
-	public function resolve( \User $user, $value ) {
-		if( !$this->getEntity() instanceof Entity ) {
-			return \Status::newFatal( 'invalid Item' );//TODO:: msg
+	/**
+	 *
+	 * @param User $user
+	 * @param bool $value
+	 * @return Status
+	 */
+	public function resolve( User $user, $value ) {
+		if ( !$this->getEntity() instanceof Entity ) {
+			// TODO:: msg
+			return Status::newFatal( 'invalid Item' );
 		}
 		$value = $value ? true : false;
 		$status = $this->getEntity()->userCan( 'resolve', $user );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			return $status;
 		}
 
 		$this->getEntity()->set( 'resolved', $value );
 		$status = $this->getEntity()->save( $user );
-		if( !$status->isOK() ) {
+		if ( !$status->isOK() ) {
 			return $status;
 		}
 
-		return \Status::newGood( $this );
+		return Status::newGood( $this );
 	}
 
-	public function getRenderer( \User $user = null ) {
-		if( !$user ) {
-			$user = \RequestContext::getMain()->getUser();
+	/**
+	 *
+	 * @param User|null $user
+	 * @return Renderer
+	 */
+	public function getRenderer( User $user = null ) {
+		if ( !$user ) {
+			$user = RequestContext::getMain()->getUser();
 		}
 		return Services::getInstance()->getBSRendererFactory()->get(
 			'entityresolve',
 			new Params( [
 				Resolve::PARAM_RESOLVE_ITEM => $this,
 				Resolve::PARAM_USER => $user
-			])
+			] )
 		);
 	}
 }

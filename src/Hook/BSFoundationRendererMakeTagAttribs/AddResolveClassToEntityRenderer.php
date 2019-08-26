@@ -8,22 +8,22 @@ use BlueSpice\Social\Renderer\Entity;
 class AddResolveClassToEntityRenderer extends BSFoundationRendererMakeTagAttribs {
 
 	protected function skipProcessing() {
-		if( !$this->renderer instanceof Entity ) {
+		if ( !$this->renderer instanceof Entity ) {
 			return true;
 		}
 		$factory = $this->getServices()->getService( 'BSSocialResolveFactory' );
 		$resolveItem = $factory->newFromEntity( $this->renderer->getEntity() );
-		if( !$resolveItem ) {
+		if ( !$resolveItem ) {
 			return true;
 		}
-		if( !$resolveItem->isResolved() ) {
+		if ( !$resolveItem->isResolved() ) {
 			return true;
 		}
 		return false;
 	}
 
 	protected function doProcess() {
-		if( empty( $this->attribs['class'] ) ) {
+		if ( empty( $this->attribs['class'] ) ) {
 			$this->attribs['class'] = '';
 		}
 		$this->attribs['class'] .= ' resolved';

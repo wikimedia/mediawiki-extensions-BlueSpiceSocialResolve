@@ -50,7 +50,7 @@ class Resolve extends \BlueSpice\Renderer {
 			static::PARAM_RESOLVE_ITEM,
 			false
 		);
-		if( !$this->item instanceof Item ) {
+		if ( !$this->item instanceof Item ) {
 			throw new MWException(
 				'\\BlueSpice\\Social\\Resolve\\Item required'
 			);
@@ -59,15 +59,15 @@ class Resolve extends \BlueSpice\Renderer {
 			static::PARAM_USER,
 			false
 		);
-		if( !$this->user instanceof User ) {
+		if ( !$this->user instanceof User ) {
 			throw new MWException( '\\User required' );
 		}
 		$this->args[static::PARAM_TAG] = 'a';
-		if( !$this->args[static::PARAM_CLASS] ) {
+		if ( !$this->args[static::PARAM_CLASS] ) {
 			$this->args[static::PARAM_CLASS] = '';
 		}
 		$this->args[static::PARAM_CLASS] .= ' bs-social-entityaftercontent-resolve';
-		if( $this->item->isResolved() ) {
+		if ( $this->item->isResolved() ) {
 			$this->args[static::PARAM_CLASS] .= ' resolved';
 		}
 	}
@@ -109,7 +109,7 @@ class Resolve extends \BlueSpice\Renderer {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return array
 	 */
 	public function getArgs() {
