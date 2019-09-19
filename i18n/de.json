@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth <wirth@hallowelt.com>"
+			"Patric Wirth <wirth@hallowelt.com>",
+			"Mglaser"
 		]
 	},
 	"bs-socialresolve-desc": "Statusfeld für BlueSpiceSocial-Entitäten",
 	"bs-socialresolve-status-resolved": "Geschlossen",
 	"bs-socialresolve-status-notresolved": "Offen",
-	"bs-socialresolve-var-resolved": "Status"
+	"bs-socialresolve-var-resolved": "Status",
+	"apihelp-bs-socialresolve-tasks-summary": "Stellt Aufgaben für die Bearbeitung des Erledigt-Status von Entitäten bereit"
 }
