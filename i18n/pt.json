@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"Hamilton Abreu"
 		]
 	},
-	"bs-socialresolve-desc": "Funcionalidade de resolver para entidades de BlueSpiceSocial",
+	"bs-socialresolve-desc": "Funcionalidade de resolução para as entidades de BlueSpiceSocial",
 	"bs-socialresolve-status-resolved": "Resolvido",
 	"bs-socialresolve-status-notresolved": "Não resolvido",
-	"bs-socialresolve-var-resolved": "Estado de resolver"
+	"bs-socialresolve-var-resolved": "Estado de resolução"
 }
