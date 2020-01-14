@@ -28,8 +28,8 @@
 namespace BlueSpice\Social\Resolve\Api\Task;
 
 use BlueSpice\Api\Response\Standard;
-use BlueSpice\Social\Entity;
 use BlueSpice\Services;
+use BlueSpice\Social\Entity;
 
 /**
  * Api base class for simple tasks in BlueSpice

@@ -1,15 +1,15 @@
 <?php
 namespace BlueSpice\Social\Resolve\Renderer;
 
-use IContextSource;
-use Config;
-use MWException;
-use Html;
-use FormatJson;
-use User;
-use MediaWiki\Linker\LinkRenderer;
 use BlueSpice\Renderer\Params;
 use BlueSpice\Social\Resolve\Item;
+use Config;
+use FormatJson;
+use Html;
+use IContextSource;
+use MediaWiki\Linker\LinkRenderer;
+use MWException;
+use User;
 
 class Resolve extends \BlueSpice\Renderer {
 	const PARAM_RESOLVE_ITEM = 'resolveitem';

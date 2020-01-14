@@ -2,10 +2,10 @@
 
 namespace BlueSpice\Social\Resolve\Hook\BSEntityConfigAttributeDefinitions;
 
-use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
-use BlueSpice\Social\EntityConfig;
 use BlueSpice\Data\Entity\Schema;
 use BlueSpice\Data\FieldType;
+use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
+use BlueSpice\Social\EntityConfig;
 
 class AddResolve extends BSEntityConfigAttributeDefinitions {
 

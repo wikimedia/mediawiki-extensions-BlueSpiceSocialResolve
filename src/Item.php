@@ -30,15 +30,15 @@
  */
 namespace BlueSpice\Social\Resolve;
 
-use Status;
-use User;
+use BlueSpice\Renderer;
+use BlueSpice\Renderer\Params;
+use BlueSpice\Services;
+use BlueSpice\Social\Entity;
+use BlueSpice\Social\Resolve\Renderer\Resolve;
 use Config;
 use RequestContext;
-use BlueSpice\Renderer;
-use BlueSpice\Social\Entity;
-use BlueSpice\Services;
-use BlueSpice\Renderer\Params;
-use BlueSpice\Social\Resolve\Renderer\Resolve;
+use Status;
+use User;
 
 class Item implements \JsonSerializable {
 

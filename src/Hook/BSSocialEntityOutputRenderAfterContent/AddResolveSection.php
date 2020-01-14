@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Social\Resolve\Hook\BSSocialEntityOutputRenderAfterContent;
 
-use BlueSpice\Social\Hook\BSSocialEntityOutputRenderAfterContent;
 use BlueSpice\Social\Entity;
+use BlueSpice\Social\Hook\BSSocialEntityOutputRenderAfterContent;
 
 class AddResolveSection extends BSSocialEntityOutputRenderAfterContent {
 
