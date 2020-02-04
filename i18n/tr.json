@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"bs-socialresolve-desc": "BlueSpiceSocial-varlıklar için işlevselliği çözün",
+	"bs-socialresolve-status-resolved": "Çözümlendi",
+	"bs-socialresolve-status-notresolved": "Çözümlenmedi",
+	"bs-socialresolve-var-resolved": "Durumu çöz",
+	"apihelp-bs-socialresolve-tasks-summary": "Varlıkların çözümleme durumunu düzenlemek için görevler sağlar"
+}
