@@ -72,7 +72,7 @@ class Resolve extends \BSApiTasksBase {
 			$taskData->resolved = false;
 		}
 		$services = Services::getInstance();
-		$entity = $services->getBSEntityFactory()->newFromID(
+		$entity = $services->getService( 'BSEntityFactory' )->newFromID(
 			$taskData->{Entity::ATTR_ID},
 			$taskData->{Entity::ATTR_TYPE}
 		);
