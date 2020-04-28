@@ -138,7 +138,7 @@ class Item implements \JsonSerializable {
 		if ( !$user ) {
 			$user = RequestContext::getMain()->getUser();
 		}
-		return Services::getInstance()->getBSRendererFactory()->get(
+		return Services::getInstance()->getService( 'BSRendererFactory' )->get(
 			'entityresolve',
 			new Params( [
 				Resolve::PARAM_RESOLVE_ITEM => $this,
