@@ -28,7 +28,6 @@
 namespace BlueSpice\Social\Resolve\Api\Task;
 
 use BlueSpice\Api\Response\Standard;
-use BlueSpice\Services;
 use BlueSpice\Social\Entity;
 
 /**
@@ -71,7 +70,7 @@ class Resolve extends \BSApiTasksBase {
 		if ( empty( $taskData->resolved ) ) {
 			$taskData->resolved = false;
 		}
-		$services = Services::getInstance();
+		$services = $this->getServices();
 		$entity = $services->getService( 'BSEntityFactory' )->newFromID(
 			$taskData->{Entity::ATTR_ID},
 			$taskData->{Entity::ATTR_TYPE}
