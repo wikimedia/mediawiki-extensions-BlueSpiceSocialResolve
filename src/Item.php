@@ -32,10 +32,10 @@ namespace BlueSpice\Social\Resolve;
 
 use BlueSpice\Renderer;
 use BlueSpice\Renderer\Params;
-use BlueSpice\Services;
 use BlueSpice\Social\Entity;
 use BlueSpice\Social\Resolve\Renderer\Resolve;
 use Config;
+use MediaWiki\MediaWikiServices;
 use RequestContext;
 use Status;
 use User;
@@ -138,7 +138,7 @@ class Item implements \JsonSerializable {
 		if ( !$user ) {
 			$user = RequestContext::getMain()->getUser();
 		}
-		return Services::getInstance()->getService( 'BSRendererFactory' )->get(
+		return MediaWikiServices::getInstance()->getService( 'BSRendererFactory' )->get(
 			'entityresolve',
 			new Params( [
 				Resolve::PARAM_RESOLVE_ITEM => $this,
