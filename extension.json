@@ -48,6 +48,7 @@
 	"ResourceModules": {
 		"ext.bluespice.social.resolve": {
 			"scripts": [
+				"EntityActionMenu/Resolved.js",
 				"bluespice.social.resolve.js",
 				"EntityListMenu/Filter/Resolved.js"
 			],
@@ -78,13 +79,13 @@
 	},
 	"Hooks": {
 		"BSEntityConfigDefaults": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigDefaults\\IsResolvable::callback",
-		"BSSocialEntityOutputRenderAfterContent": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialEntityOutputRenderAfterContent\\AddResolveSection::callback",
 		"BSEntityGetFullData": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityGetFullData\\AddResolve::callback",
 		"BSEntitySetValuesByObject": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntitySetValuesByObject\\AddResolve::callback",
 		"BSSocialModuleDepths": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialModuleDepths\\AddModules::callback",
 		"BSEntityConfigAttributeDefinitions": "\\BlueSpice\\Social\\Resolve\\Hook\\BSEntityConfigAttributeDefinitions\\AddResolve::callback",
 		"BSFoundationRendererMakeTagAttribs": "\\BlueSpice\\Social\\Resolve\\Hook\\BSFoundationRendererMakeTagAttribs\\AddResolveClassToEntityRenderer::callback",
-		"BSSocialEntityListRenderEntity": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialEntityListRenderEntity\\RenderShortWhenResolved::callback"
+		"BSSocialEntityListRenderEntity": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialEntityListRenderEntity\\RenderShortWhenResolved::callback",
+		"BSSocialEntityGetActions": "\\BlueSpice\\Social\\Resolve\\Hook\\BSSocialEntityGetActions\\AddResolve::callback"
 	},
 	"manifest_version": 2
 }
