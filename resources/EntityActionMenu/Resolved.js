@@ -16,14 +16,14 @@ bs.social.EntityActionMenuResolved.Resolved = function ( entityActionMenu, data 
 	me.entityActionMenu = entityActionMenu;
 	me.$element = null;
 
-	if( me.data.resolved ) {
-		me.$element = $( '<li><a class="dropdown-item">'
-		+ mw.message( 'bs-socialresolve-status-notresolved' ).text()
+	if( !me.entityActionMenu.entity.data.get( 'resolved' ) ) {
+		me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-resolve">'
+		+ '<span>' + mw.message( 'bs-socialresolve-status-notresolved' ).text() + '</span>'
 		+ '</a></li>' );
 	}
 	else{
-		me.$element = $( '<li><a class="dropdown-item">'
-		+ mw.message( 'bs-socialresolve-status-resolved' ).text()
+		me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-resolve resolved">'
+		+ '<span>' + mw.message( 'bs-socialresolve-status-resolved' ).text() + '</span>'
 		+ '</a></li>' );
 	}
 
@@ -43,7 +43,7 @@ bs.social.EntityActionMenuResolved.Resolved.prototype.click = function (e) {
 		'resolve',
 		{ id: me.entityActionMenu.entity.id
 			, type: me.entityActionMenu.entity.type
-			, resolved: !me.data.resolved
+			, resolved: !me.entityActionMenu.entity.data.get( 'resolved' )
 		}
 	).done( function( ) {
 		me.entityActionMenu.entity.reload();
