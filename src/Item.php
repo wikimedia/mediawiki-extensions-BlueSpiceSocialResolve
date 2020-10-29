@@ -50,7 +50,7 @@ class Item implements \JsonSerializable {
 
 	/**
 	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	protected $resolved = false;
 
