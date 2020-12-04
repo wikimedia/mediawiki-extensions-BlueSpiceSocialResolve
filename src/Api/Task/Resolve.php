@@ -50,7 +50,7 @@ class Resolve extends \BSApiTasksBase {
 	 */
 	protected function getRequiredTaskPermissions() {
 		return [
-			'resolve' => [ 'edit' ],
+			'resolve' => [ 'social-resolve' ],
 		];
 	}
 
@@ -79,6 +79,9 @@ class Resolve extends \BSApiTasksBase {
 			return $result;
 		}
 
+		if ( !$entity->userCan( 'resolve', $this->getUser() )->isOk() ) {
+			return $result;
+		}
 		$resolveItem = $services->getService( 'BSSocialResolveFactory' )
 			->newFromEntity( $entity );
 		if ( !$resolveItem ) {

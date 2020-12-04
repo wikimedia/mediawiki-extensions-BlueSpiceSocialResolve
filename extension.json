@@ -28,6 +28,14 @@
 			},
 			"LessVarsRegistry": {
 				"bs-social-background-color-resolved": "#D9F2DA"
+			},
+			"PermissionRegistry": {
+				"social-resolve": {
+					"type": "namespace",
+					"roles": [
+						"editor"
+					]
+				}
 			}
 		}
 	},
@@ -42,6 +50,20 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Social\\Resolve\\": "src/"
 	},
+	"GroupPermissions": {
+		"*": {
+			"social-resolve": false
+		},
+		"user": {
+			"social-resolve": true
+		},
+		"sysop": {
+			"social-resolve": true
+		}
+	},
+	"AvailableRights": [
+		"social-resolve"
+	],
 	"APIModules": {
 		"bs-socialresolve-tasks": "\\BlueSpice\\Social\\Resolve\\Api\\Task\\Resolve"
 	},

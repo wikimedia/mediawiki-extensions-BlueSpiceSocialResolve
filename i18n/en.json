@@ -8,5 +8,7 @@
 	"bs-socialresolve-status-resolved": "Resolved",
 	"bs-socialresolve-status-notresolved": "Unresolved",
 	"bs-socialresolve-var-resolved": "Resolve status",
-	"apihelp-bs-socialresolve-tasks-summary": "Provides tasks for editing the resolve status of entities"
+	"apihelp-bs-socialresolve-tasks-summary": "Provides tasks for editing the resolve status of entities",
+	"action-social-resolve": "change the resolve status of entries",
+	"right-social-resolve": "Change the resolve status of entries"
 }
