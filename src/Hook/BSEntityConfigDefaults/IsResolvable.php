@@ -8,7 +8,7 @@ class IsResolvable extends BSEntityConfigDefaults {
 
 	protected function doProcess() {
 		$this->defaultSettings['IsResolvable'] = false;
-		$this->defaultSettings['ResolvePermission'] = 'edit';
+		$this->defaultSettings['ResolvePermission'] = 'social-resolve';
 		return true;
 	}
 }
