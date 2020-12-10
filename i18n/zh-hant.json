@@ -8,5 +8,7 @@
 	"bs-socialresolve-status-resolved": "已解決",
 	"bs-socialresolve-status-notresolved": "未解決",
 	"bs-socialresolve-var-resolved": "解決狀態",
-	"apihelp-bs-socialresolve-tasks-summary": "提供用於編輯單元解決狀態的任務"
+	"apihelp-bs-socialresolve-tasks-summary": "提供用於編輯單元解決狀態的任務",
+	"action-social-resolve": "更改項目的解決狀態",
+	"right-social-resolve": "更改項目的解決狀態"
 }
