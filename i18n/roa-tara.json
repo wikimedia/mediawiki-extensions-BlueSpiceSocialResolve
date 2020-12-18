@@ -8,5 +8,7 @@
 	"bs-socialresolve-status-resolved": "Resolte",
 	"bs-socialresolve-status-notresolved": "Non resolte",
 	"bs-socialresolve-var-resolved": "State d'a resoluzione",
-	"apihelp-bs-socialresolve-tasks-summary": "Dèje combite pu cangiamende de le state de resoluzione de l'endità"
+	"apihelp-bs-socialresolve-tasks-summary": "Dèje combite pu cangiamende de le state de resoluzione de l'endità",
+	"action-social-resolve": "cange 'u state de soluzione de le vôsce",
+	"right-social-resolve": "Cange 'u state de soluzione de le vôsce"
 }
