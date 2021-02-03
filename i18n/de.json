@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth",
-			"Mglaser"
+			"Mglaser",
+			"Patric Wirth"
 		]
 	},
 	"bs-socialresolve-desc": "Statusfeld für BlueSpiceSocial-Entitäten",
