@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"HajFunk",
 			"Mglaser",
 			"Patric Wirth"
 		]
@@ -11,5 +12,5 @@
 	"bs-socialresolve-var-resolved": "Status",
 	"apihelp-bs-socialresolve-tasks-summary": "Stellt Aufgaben für die Bearbeitung des Erledigt-Status von Entitäten bereit",
 	"action-social-resolve": "den Erledigungsstatus von Einträgen zu ändern",
-	"right-social-resolve": "Änderung des Erledigungsstatus von Einträgen"
+	"right-social-resolve": "Änderung des Fortschrittes von Einträgen"
 }
