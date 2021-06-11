@@ -9,5 +9,7 @@
 	"bs-socialresolve-status-resolved": "Résolu",
 	"bs-socialresolve-status-notresolved": "Non résolu",
 	"bs-socialresolve-var-resolved": "État de résolution",
-	"apihelp-bs-socialresolve-tasks-summary": "Fournit des tâches pour modifier l’état de résolution des entités"
+	"apihelp-bs-socialresolve-tasks-summary": "Fournit des tâches pour modifier l’état de résolution des entités",
+	"action-social-resolve": "changer l’état de résolution des entrées",
+	"right-social-resolve": "Changer l’état de résolution des entrées"
 }

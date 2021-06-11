@@ -8,5 +8,7 @@
 	"bs-socialresolve-status-resolved": "Løst",
 	"bs-socialresolve-status-notresolved": "Uløst",
 	"bs-socialresolve-var-resolved": "Løsingsstatus",
-	"apihelp-bs-socialresolve-tasks-summary": "Tilbyr oppgaver for å redigere løsingsstatusen til entiteter"
+	"apihelp-bs-socialresolve-tasks-summary": "Tilbyr oppgaver for å redigere løsingsstatusen til entiteter",
+	"action-social-resolve": "endre løsningsstatusen til oppføringer",
+	"right-social-resolve": "Endre løsningsstatusen til oppføringer"
 }
