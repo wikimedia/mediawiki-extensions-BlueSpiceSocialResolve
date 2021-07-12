@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			")8"
+			")8",
+			"Lakejason0"
 		]
 	},
-	"bs-socialresolve-status-resolved": "已解决"
+	"bs-socialresolve-status-resolved": "已解决",
+	"bs-socialresolve-status-notresolved": "未解决",
+	"bs-socialresolve-var-resolved": "解决状态"
 }
