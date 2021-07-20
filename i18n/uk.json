@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion"
 		]
 	},
@@ -8,5 +9,7 @@
 	"bs-socialresolve-status-resolved": "Вирішено",
 	"bs-socialresolve-status-notresolved": "Невирішено",
 	"bs-socialresolve-var-resolved": "Статус вирішеності",
-	"apihelp-bs-socialresolve-tasks-summary": "Надає завдання для редагування статусу вирішеності сутностей"
+	"apihelp-bs-socialresolve-tasks-summary": "Надає завдання для редагування статусу вирішеності сутностей",
+	"action-social-resolve": "змінити статус вирішення записів",
+	"right-social-resolve": "Змініти статус вирішення записів"
 }
