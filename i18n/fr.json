@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"McDutchie",
 			"Verdy p"
 		]
 	},
-	"bs-socialresolve-desc": "Résoudre la fonctionnalité pour les entités de ''BlueSpiceSocial''",
+	"bs-socialresolve-desc": "Fonctionnalité de résolution pour les entités de ''BlueSpiceSocial''",
 	"bs-socialresolve-status-resolved": "Résolu",
 	"bs-socialresolve-status-notresolved": "Non résolu",
 	"bs-socialresolve-var-resolved": "État de résolution",

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-socialresolve-desc": "Functionalitate de resolution pro entitates BlueSpiceSocial",
+	"bs-socialresolve-status-resolved": "Resolvite",
+	"bs-socialresolve-status-notresolved": "Non resolvite",
+	"bs-socialresolve-var-resolved": "Stato de resolution",
+	"apihelp-bs-socialresolve-tasks-summary": "Forni processos pro modificar le stato de resolution de entitates",
+	"action-social-resolve": "cambiar le stato de resolution de entratas",
+	"right-social-resolve": "Cambiar le stato de resolution de entratas"
+}
