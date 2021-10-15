@@ -12,8 +12,8 @@ use MWException;
 use User;
 
 class Resolve extends \BlueSpice\Renderer {
-	const PARAM_RESOLVE_ITEM = 'resolveitem';
-	const PARAM_USER = 'user';
+	public const PARAM_RESOLVE_ITEM = 'resolveitem';
+	public const PARAM_USER = 'user';
 
 	/**
 	 *
