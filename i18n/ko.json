@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"bs-socialresolve-status-resolved": "해결됨",
+	"bs-socialresolve-status-notresolved": "해결되지 않음",
+	"bs-socialresolve-var-resolved": "해결 상태"
+}
