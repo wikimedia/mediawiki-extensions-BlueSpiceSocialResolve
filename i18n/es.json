@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"DiegoAmbrocio"
+		]
+	},
+	"bs-socialresolve-status-resolved": "Resuelto",
+	"bs-socialresolve-status-notresolved": "Sin resolver",
+	"bs-socialresolve-var-resolved": "Resolver el estado",
+	"action-social-resolve": "cambiar el estado de resolución de las entradas",
+	"right-social-resolve": "Cambiar el estado de resolución de las entradas"
+}
