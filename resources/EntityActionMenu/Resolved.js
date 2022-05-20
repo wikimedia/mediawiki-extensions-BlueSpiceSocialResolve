@@ -17,12 +17,12 @@ bs.social.EntityActionMenuResolved.Resolved = function ( entityActionMenu, data 
 	me.$element = null;
 
 	if( !me.entityActionMenu.entity.data.get( 'resolved' ) ) {
-		me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-resolve">'
+		me.$element = $( '<li class="dropdown-item"><a class="bs-social-entity-action-resolve">'
 		+ '<span>' + mw.message( 'bs-socialresolve-status-notresolved' ).text() + '</span>'
 		+ '</a></li>' );
 	}
 	else{
-		me.$element = $( '<li><a class="dropdown-item bs-social-entity-action-resolve resolved">'
+		me.$element = $( '<li class="dropdown-item"><a class="bs-social-entity-action-resolve resolved highlight">'
 		+ '<span>' + mw.message( 'bs-socialresolve-status-resolved' ).text() + '</span>'
 		+ '</a></li>' );
 	}
