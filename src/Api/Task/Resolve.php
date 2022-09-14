@@ -70,8 +70,7 @@ class Resolve extends \BSApiTasksBase {
 		if ( empty( $taskData->resolved ) ) {
 			$taskData->resolved = false;
 		}
-		$services = $this->getServices();
-		$entity = $services->getService( 'BSEntityFactory' )->newFromID(
+		$entity = $this->services->getService( 'BSEntityFactory' )->newFromID(
 			$taskData->{Entity::ATTR_ID},
 			$taskData->{Entity::ATTR_TYPE}
 		);
@@ -82,7 +81,7 @@ class Resolve extends \BSApiTasksBase {
 		if ( !$entity->userCan( 'resolve', $this->getUser() )->isOk() ) {
 			return $result;
 		}
-		$resolveItem = $services->getService( 'BSSocialResolveFactory' )
+		$resolveItem = $this->services->getService( 'BSSocialResolveFactory' )
 			->newFromEntity( $entity );
 		if ( !$resolveItem ) {
 			return $result;
