@@ -2,9 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Romaine"
 		]
 	},
+	"bs-socialresolve-desc": "Oplossingsfunctionaliteit voor BlueSpiceSocial-entiteiten",
 	"bs-socialresolve-status-resolved": "Opgelost",
-	"bs-socialresolve-status-notresolved": "Onopgelost"
+	"bs-socialresolve-status-notresolved": "Onopgelost",
+	"bs-socialresolve-var-resolved": "Oplosstatus",
+	"apihelp-bs-socialresolve-tasks-summary": "Biedt taken voor het bewerken van de oplosstatus van entiteiten",
+	"action-social-resolve": "de oplosstatus van vermeldingen te wijzigen",
+	"right-social-resolve": "De oplosstatus van vermeldingen wijzigen"
 }
