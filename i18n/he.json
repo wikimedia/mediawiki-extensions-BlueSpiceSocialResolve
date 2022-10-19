@@ -2,10 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Steeve815",
-			"ישראל קלר"
+			"ישראל קלר",
+			"Amire80"
 		]
 	},
+	"bs-socialresolve-desc": "פונקציונליות פתרון עבור ישויות BlueSpiceSocial",
 	"bs-socialresolve-status-resolved": "פתור",
 	"bs-socialresolve-status-notresolved": "לא פתור",
-	"action-social-resolve": "לשנות את סטטוס הפתרון של הערכים"
+	"bs-socialresolve-var-resolved": "מצב פתרון",
+	"apihelp-bs-socialresolve-tasks-summary": "אספקת משימות לעריכת מצב הפתרון של הישויות",
+	"action-social-resolve": "לשנות את סטטוס הפתרון של הערכים",
+	"right-social-resolve": "שינוי מצוב הפתרון של הרשומות"
 }
