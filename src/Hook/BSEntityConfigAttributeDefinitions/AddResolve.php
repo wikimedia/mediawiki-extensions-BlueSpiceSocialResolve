@@ -3,9 +3,9 @@
 namespace BlueSpice\Social\Resolve\Hook\BSEntityConfigAttributeDefinitions;
 
 use BlueSpice\Data\Entity\Schema;
-use BlueSpice\Data\FieldType;
 use BlueSpice\Hook\BSEntityConfigAttributeDefinitions;
 use BlueSpice\Social\EntityConfig;
+use MWStake\MediaWiki\Component\DataStore\FieldType;
 
 class AddResolve extends BSEntityConfigAttributeDefinitions {
 
