@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"GpieroMW",
 			"Stefano"
 		]
 	},
-	"bs-socialresolve-status-resolved": "Risolto"
+	"bs-socialresolve-status-resolved": "Risolto",
+	"bs-socialresolve-status-notresolved": "Irrisolto"
 }
