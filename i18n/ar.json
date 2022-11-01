@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Meno25",
 			"ديفيد"
 		]
 	},
@@ -8,5 +9,7 @@
 	"bs-socialresolve-status-resolved": "تم الحل",
 	"bs-socialresolve-status-notresolved": "غير محلول",
 	"bs-socialresolve-var-resolved": "حالة الحل",
-	"apihelp-bs-socialresolve-tasks-summary": "يوفر مهام لتحرير حالة حل الكيانات"
+	"apihelp-bs-socialresolve-tasks-summary": "يوفر مهام لتحرير حالة حل الكيانات",
+	"action-social-resolve": "تغيير حالة حل الإدخالات",
+	"right-social-resolve": "قم بتغيير حالة حل الإدخالات"
 }
