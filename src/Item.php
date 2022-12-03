@@ -67,7 +67,7 @@ class Item implements \JsonSerializable {
 	 *
 	 * @return array
 	 */
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		$data = [];
 		$oStatus = $this->getEntity()->userCan(
 			'resolve',
