@@ -50,6 +50,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Social\\Resolve\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Social\\Resolve\\Tests\\": "tests/phpunit/"
+	},
 	"GroupPermissions": {
 		"*": {
 			"social-resolve": false
