@@ -31,5 +31,10 @@
 	},
 	"extra": {
 		"installer-name": "BlueSpiceSocialResolve"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
