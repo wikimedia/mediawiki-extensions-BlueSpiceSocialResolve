@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"bs-socialresolve-desc": "Funkcionalnost razreševanja za entitete BlueSpiceSocial",
+	"bs-socialresolve-status-resolved": "Razrešeno",
+	"bs-socialresolve-status-notresolved": "Nerazrešeno",
+	"bs-socialresolve-var-resolved": "Stanje razreševanja",
+	"apihelp-bs-socialresolve-tasks-summary": "Zagotavlja opravila za urejanje stanja razreševanja entitet",
+	"action-social-resolve": "spreminjanje stanja razreševanja vnosov",
+	"right-social-resolve": "Spreminjanje stanja razreševanja vnosov"
+}
