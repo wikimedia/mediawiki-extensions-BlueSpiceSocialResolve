@@ -2,7 +2,7 @@
 	"name": "BlueSpiceSocialResolve",
 	"version": "4.2.5",
 	"license-name": "GPL-3.0-only",
-	"url": "https://en.wiki.bluespice.com/wiki/Reference:SocialResolve",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceSocialResolve",
 	"author": "Patric Wirth",
 	"descriptionmsg": "bs-socialresolve-desc",
 	"requires": {
