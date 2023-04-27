@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-socialresolve-desc": "Išsprendimo funkcija BlueSpiceSocial subjektams",
+	"bs-socialresolve-status-resolved": "Išspręsta",
+	"bs-socialresolve-status-notresolved": "Neišspręsta",
+	"bs-socialresolve-var-resolved": "Sprendimo būsena",
+	"apihelp-bs-socialresolve-tasks-summary": "Pateikia užduotis sprendimo būsenos subjektams keitimui",
+	"action-social-resolve": "keisti subjektų sprendimo būseną",
+	"right-social-resolve": "Keisti subjektų sprendimo būseną"
+}
