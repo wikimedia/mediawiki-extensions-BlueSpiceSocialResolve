@@ -2,10 +2,15 @@
 	"@metadata": {
 		"authors": [
 			")8",
-			"Lakejason0"
+			"Lakejason0",
+			"沈澄心"
 		]
 	},
+	"bs-socialresolve-desc": "用于BlueSpiceSocial-entities的解决功能",
 	"bs-socialresolve-status-resolved": "已解决",
 	"bs-socialresolve-status-notresolved": "未解决",
-	"bs-socialresolve-var-resolved": "解决状态"
+	"bs-socialresolve-var-resolved": "解决状态",
+	"apihelp-bs-socialresolve-tasks-summary": "提供用于编辑单元解决状态的任务",
+	"action-social-resolve": "更改项目的解决状态",
+	"right-social-resolve": "更改项目的解决状态"
 }
