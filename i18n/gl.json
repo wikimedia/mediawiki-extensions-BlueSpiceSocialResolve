@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"bs-socialresolve-desc": "Funcionalidade de resolución para as entidades de BlueSpiceSocial",
+	"bs-socialresolve-status-resolved": "Resolto",
+	"bs-socialresolve-status-notresolved": "Sen resolver",
+	"bs-socialresolve-var-resolved": "Estado de resolución",
+	"apihelp-bs-socialresolve-tasks-summary": "Ofrece tarefas para editar o estado de resolución das entidades",
+	"action-social-resolve": "cambiar o estado de resolución das entradas",
+	"right-social-resolve": "Cambiar o estado de resolución das entradas"
+}
