@@ -5,11 +5,11 @@
 			"Tensama0415"
 		]
 	},
-	"bs-socialresolve-desc": "BlueSpiceSocial 엔티티에 대한 해결 기능",
+	"bs-socialresolve-desc": "BlueSpiceSocial-개체에 대한 해결 기능",
 	"bs-socialresolve-status-resolved": "해결됨",
 	"bs-socialresolve-status-notresolved": "해결되지 않음",
 	"bs-socialresolve-var-resolved": "해결 상태",
-	"apihelp-bs-socialresolve-tasks-summary": "엔티티의 해결 상태를 편집하기 위한 작업을 제공합니다.",
+	"apihelp-bs-socialresolve-tasks-summary": "개체의 해결 상태를 편집하기 위한 작업을 제공합니다.",
 	"action-social-resolve": "항목의 해결 상태를 변경",
 	"right-social-resolve": "항목의 해결 상태를 변경"
 }
