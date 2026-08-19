@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-socialresolve-desc": "د BlueSpiceSocial شتونتياوو لپاره کړنچارولي هواروي",
+	"bs-socialresolve-status-resolved": "اوار‌شوی",
+	"bs-socialresolve-status-notresolved": "نااوار‌شوی",
+	"bs-socialresolve-var-resolved": "اوارېدو دريځ",
+	"apihelp-bs-socialresolve-tasks-summary": "د شتونتياوو د اوارېدو د دريځ سمولو لپاره کاردندې چمتو کوي",
+	"action-social-resolve": "د ننوتنو د اوارېدو دريځ بدلول",
+	"right-social-resolve": "د ننوتنو د اوارېدو دريځ بدلول"
+}
