@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"bs-socialresolve-desc": "Funkcia riešenia pre entity BlueSpiceSocial",
+	"bs-socialresolve-status-resolved": "Vyriešené",
+	"bs-socialresolve-status-notresolved": "Nevyriešené",
+	"bs-socialresolve-var-resolved": "Stav vyriešenia",
+	"apihelp-bs-socialresolve-tasks-summary": "Poskytuje úlohy na úpravu stavu vyriešenia entít",
+	"action-social-resolve": "meniť stav vyriešenia záznamov",
+	"right-social-resolve": "Meniť stav vyriešenia záznamov"
+}
